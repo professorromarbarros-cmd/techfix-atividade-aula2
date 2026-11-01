@@ -244,4 +244,8 @@ if __name__ == "__main__":
     # share=True gera o link público temporário (*.gradio.live) para testar no celular.
     # Para desligar (ex.: rede sem acesso ao túnel), defina GRADIO_SHARE=false no .env.
     compartilhar = os.getenv("GRADIO_SHARE", "true").strip().lower() in ("1", "true", "sim", "yes")
-    demo.launch(share=compartilhar, theme=gr.themes.Soft(), css=CSS)
+    # GRADIO_SERVER_NAME=0.0.0.0 permite abrir pelo IP do PC na mesma rede Wi-Fi
+    # (alternativa quando a rede bloqueia o link público). Lido aqui, após o
+    # load_dotenv(), porque o Gradio só consulta essa variável ao ser importado.
+    servidor = os.getenv("GRADIO_SERVER_NAME", "").strip() or "127.0.0.1"
+    demo.launch(share=compartilhar, server_name=servidor, theme=gr.themes.Soft(), css=CSS)
