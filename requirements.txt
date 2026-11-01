@@ -1,0 +1,7 @@
+# Versões testadas em 01/11/2026 com Python 3.13 (requer Python 3.10+)
+supabase==2.33.0
+gradio==6.31.0
+streamlit==1.66.1
+pandas==3.0.5
+altair==6.3.0
+python-dotenv==1.2.3

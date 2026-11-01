@@ -1,0 +1,12 @@
+NOTICE:  OK      T01 status padrão = Aberto
+NOTICE:  OK      T02 e-mail duplicado rejeitado (UNIQUE)
+NOTICE:  OK      T03 e-mail com maiúsculas rejeitado (CHECK normalizado)
+NOTICE:  OK      T04 e-mail sem @ rejeitado (CHECK formato)
+NOTICE:  OK      T05 celular com máscara rejeitado (somente dígitos)
+NOTICE:  OK      T06 celular com menos de 10 dígitos rejeitado
+NOTICE:  OK      T07 nome nulo rejeitado (NOT NULL)
+NOTICE:  OK      T08 nome só com espaços rejeitado
+NOTICE:  OK      T09 status fora da lista rejeitado (CHECK status)
+NOTICE:  OK      T10 OS com cliente inexistente rejeitada (FK)
+NOTICE:  OK      T11 trigger atualizou data_atualizacao (valor gravado: 2026-11-01 10:34:10.77426-03)
+NOTICE:  OK      T12 excluir cliente remove suas OS (ON DELETE CASCADE)

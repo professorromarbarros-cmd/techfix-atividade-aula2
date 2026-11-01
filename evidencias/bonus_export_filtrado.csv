@@ -1,0 +1,11 @@
+﻿os_id;status;cliente_nome;cliente_email;cliente_celular;cliente_endereco;modelo_computador;problema_relatado;data_abertura;data_atualizacao
+10;Aberto;Gabriela Ficticia Teixeira;gabriela.ficticia@example.com;77900000009;Rua Exemplo, 77 - Centro;Impressora Epson L3250;Manchando as folhas.;01/11/2026 10:41;01/11/2026 10:41
+9;Aberto;Gabriela Ficticia Teixeira;gabriela.ficticia@example.com;77900000009;Rua Exemplo, 77 - Centro;Notebook Samsung Book;Carregador não carrega a bateria e o notebook desliga sozinho.;01/11/2026 10:41;01/11/2026 10:41
+8;Aberto;Elisa Simulada Prado;elisa.simulada@example.com;77900000005;Rua Gama, 45 - Patagônia;Notebook Acer Aspire 5;Teclado com teclas sem resposta.;01/11/2026 10:40;01/11/2026 10:40
+7;Concluído;Elisa Simulada Prado;elisa.simulada@example.com;77900000005;Rua Gama, 45 - Patagônia;All-in-one Positivo;Lentidão extrema e possíveis vírus.;01/11/2026 10:40;01/11/2026 10:40
+6;Em análise;Diego Modelo Alves;diego.modelo@example.com;77900000004;Travessa Beta, 8 - Brasil;MacBook Air M1;Bateria descarrega muito rápido.;01/11/2026 10:40;01/11/2026 10:40
+5;Aguardando peça;Carla Exemplo Rocha;carla.exemplo@example.com;77900000003;Rua Projetada A, 12 - Recreio;Notebook Lenovo IdeaPad 3;Tela com listras verticais.;01/11/2026 10:40;01/11/2026 10:40
+4;Concluído;Carla Exemplo Rocha;carla.exemplo@example.com;77900000003;Rua Projetada A, 12 - Recreio;Mouse sem fio Logitech;Clique esquerdo falhando.;01/11/2026 10:40;01/11/2026 10:40
+3;Em análise;Bruno Teste Lima;bruno.teste@example.com;77900000002;Av. dos Ipês, 250 - Candeias;Desktop montado i5;Reinicia sozinho durante jogos.;01/11/2026 10:40;01/11/2026 10:40
+2;Aberto;Ana Ficticia Souza;ana.ficticia@example.com;77900000001;Rua das Acácias, 100 - Centro;Notebook Dell Inspiron 15;Não liga após queda de energia.;01/11/2026 10:40;01/11/2026 10:40
+1;Entregue;Ana Ficticia Souza;ana.ficticia@example.com;77900000001;Rua das Acácias, 100 - Centro;Impressora HP DeskJet;Atolando papel constantemente.;01/11/2026 10:40;01/11/2026 10:40

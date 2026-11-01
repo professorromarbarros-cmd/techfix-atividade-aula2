@@ -1,0 +1,24 @@
+SET
+ id |            nome            |             email             | celular_whatsapp |             endereco              |  data_cadastro   
+----+----------------------------+-------------------------------+------------------+-----------------------------------+------------------
+  1 | Ana Ficticia Souza         | ana.ficticia@example.com      | 77911110000      | Av. Nova Fictícia, 900 - Candeias | 01/11/2026 10:40
+  3 | Carla Exemplo Rocha        | carla.exemplo@example.com     | 77900000003      | Rua Projetada A, 12 - Recreio     | 01/11/2026 10:40
+  4 | Diego Modelo Alves         | diego.modelo@example.com      | 77900000004      | Travessa Beta, 8 - Brasil         | 01/11/2026 10:40
+  5 | Elisa Simulada Prado       | elisa.simulada@example.com    | 77900000005      | Rua Gama, 45 - Patagônia          | 01/11/2026 10:40
+  6 | Gabriela Ficticia Teixeira | gabriela.ficticia@example.com | 77900000009      | Rua Exemplo, 77 - Centro          | 01/11/2026 10:41
+  7 | Iara Ficticia Moura        | iara.ficticia@example.com     | 77900000010      | Rua Teste, 300 - Ibirapuera       | 01/11/2026 10:41
+(6 rows)
+
+ id | cliente_id |     modelo_computador     |     status      |     abertura     |   atualizacao    
+----+------------+---------------------------+-----------------+------------------+------------------
+  1 |          1 | Impressora HP DeskJet     | Entregue        | 01/11/2026 10:40 | 01/11/2026 10:40
+  2 |          1 | Notebook Dell Inspiron 15 | Aberto          | 01/11/2026 10:40 | 01/11/2026 10:40
+  4 |          3 | Mouse sem fio Logitech    | Concluído       | 01/11/2026 10:40 | 01/11/2026 10:40
+  5 |          3 | Notebook Lenovo IdeaPad 3 | Aguardando peça | 01/11/2026 10:40 | 01/11/2026 10:40
+  6 |          4 | MacBook Air M1            | Em análise      | 01/11/2026 10:40 | 01/11/2026 10:40
+  7 |          5 | All-in-one Positivo       | Concluído       | 01/11/2026 10:40 | 01/11/2026 10:40
+  8 |          5 | Notebook Acer Aspire 5    | Aberto          | 01/11/2026 10:40 | 01/11/2026 10:40
+  9 |          6 | Notebook Samsung Book     | Aberto          | 01/11/2026 10:41 | 01/11/2026 10:41
+ 10 |          6 | Impressora Epson L3250    | Aberto          | 01/11/2026 10:41 | 01/11/2026 10:41
+(9 rows)
+
