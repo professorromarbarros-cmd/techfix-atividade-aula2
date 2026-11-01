@@ -123,7 +123,7 @@ Todos os dados são fictícios: nomes inventados, e-mails no domínio reservado 
 | (a) Gradio no celular | `real_a_gradio_celular.png` | Formulário aberto no celular (iPhone) |
 | (b) Cadastro realizado | `real_b_gradio_cadastro_sucesso.png` | "Ordem de Serviço nº 9 aberta com sucesso", status Aberto |
 | (c) Tabelas no Table Editor | `real_c_supabase_clientes.png`, `real_c_supabase_ordens_servico.png`, `real_c_supabase_clientes_ficticios.png` | `clientes` com o cliente nº 6 vindo do celular e `ordens_servico` com a OS 9 (`cliente_id` 6) |
-| (d) Streamlit | `real_d_streamlit_consultar.png`, `real_d_streamlit_editar.png`, `real_d_streamlit_indicadores.png` | Consulta com dados do cliente, edição de OS/cliente e indicadores com gráfico |
+| (d) Streamlit | `real_d_streamlit_consultar.png`, `real_d_streamlit_editar.png`, `real_d_streamlit_editar_status.png`, `real_d_streamlit_status_atualizado.png`, `real_d_streamlit_indicadores.png` | Consulta com dados do cliente, edição do cliente, alteração do status da OS 9 de Aberto para Em análise (com a confirmação "OS nº 9 atualizada") e indicadores com gráfico |
 | Bônus CSV | `real_bonus_export.csv`, `real_bonus_export_csv_excel.png` | Arquivo exportado pelo botão do painel (9 OS) e o mesmo arquivo aberto no Excel |
 
 Observações:
