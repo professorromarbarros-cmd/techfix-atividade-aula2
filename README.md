@@ -124,10 +124,11 @@ Todos os dados são fictícios: nomes inventados, e-mails no domínio reservado 
 | (b) Cadastro realizado | `real_b_gradio_cadastro_sucesso.png` | "Ordem de Serviço nº 9 aberta com sucesso", status Aberto |
 | (c) Tabelas no Table Editor | `real_c_supabase_clientes.png`, `real_c_supabase_ordens_servico.png`, `real_c_supabase_clientes_ficticios.png` | `clientes` com o cliente nº 6 vindo do celular e `ordens_servico` com a OS 9 (`cliente_id` 6) |
 | (d) Streamlit | `real_d_streamlit_consultar.png`, `real_d_streamlit_editar.png`, `real_d_streamlit_indicadores.png` | Consulta com dados do cliente, edição de OS/cliente e indicadores com gráfico |
-| Bônus CSV | `real_bonus_export_csv_excel.png` | CSV exportado pelo painel aberto no Excel (9 linhas, colunas separadas) |
+| Bônus CSV | `real_bonus_export.csv`, `real_bonus_export_csv_excel.png` | Arquivo exportado pelo botão do painel (9 OS) e o mesmo arquivo aberto no Excel |
 
 Observações:
 - **Celular pela rede local.** A rede bloqueou o túnel do link público (`Could not create share link`), mesmo com o `frpc` presente. Por isso o teste no celular foi feito pela rede Wi-Fi, com `GRADIO_SERVER_NAME=0.0.0.0`, `GRADIO_SHARE=false` e o endereço `http://192.168.15.2:7860`. O código continua com `share=True` por padrão.
+- **CSV do bônus.** Ao ser aberto e salvo de novo, o Excel gravou o arquivo como texto Unicode (UTF-16, separado por tabulação). Ele foi convertido de volta para o formato do painel (UTF-8 com BOM, separador `;`), sem alterar o conteúdo.
 - **LGPD.** No primeiro cadastro pelo celular foram usados dados pessoais reais. Eles foram substituídos por dados fictícios pelo próprio painel (aba Editar/Excluir; ver `real_d_streamlit_editar.png`). No print `real_c_supabase_clientes.png`, tirado antes da correção, a linha foi tarjada. Os prints de terminal não foram incluídos porque mostram a chave da API.
 
 ### 5.2 Testes de desenvolvimento (ambiente que reproduz o Supabase)
