@@ -115,10 +115,26 @@ Todos os dados são fictícios: nomes inventados, e-mails no domínio reservado 
 
 ## 5. Evidências
 
-| Item exigido | Arquivo |
+### 5.1 Execução real (projeto Supabase do aluno) — arquivos `evidencias/real_*`
+
+| Item exigido | Arquivo | O que mostra |
+|---|---|---|
+| Banco criado | `real_0_supabase_schema_sucesso.png`, `real_0_supabase_seed_sucesso.png` | `schema.sql` e `seed_ficticio.sql` executados no SQL Editor ("Success") |
+| (a) Gradio no celular | `real_a_gradio_celular.png` | Formulário aberto no celular (iPhone) |
+| (b) Cadastro realizado | `real_b_gradio_cadastro_sucesso.png` | "Ordem de Serviço nº 9 aberta com sucesso", status Aberto |
+| (c) Tabelas no Table Editor | `real_c_supabase_clientes.png`, `real_c_supabase_ordens_servico.png`, `real_c_supabase_clientes_ficticios.png` | `clientes` com o cliente nº 6 vindo do celular e `ordens_servico` com a OS 9 (`cliente_id` 6) |
+| (d) Streamlit | `real_d_streamlit_consultar.png`, `real_d_streamlit_editar.png`, `real_d_streamlit_indicadores.png` | Consulta com dados do cliente, edição de OS/cliente e indicadores com gráfico |
+| Bônus CSV | `real_bonus_export_csv_excel.png` | CSV exportado pelo painel aberto no Excel (9 linhas, colunas separadas) |
+
+Observações:
+- **Celular pela rede local.** A rede bloqueou o túnel do link público (`Could not create share link`), mesmo com o `frpc` presente. Por isso o teste no celular foi feito pela rede Wi-Fi, com `GRADIO_SERVER_NAME=0.0.0.0`, `GRADIO_SHARE=false` e o endereço `http://192.168.15.2:7860`. O código continua com `share=True` por padrão.
+- **LGPD.** No primeiro cadastro pelo celular foram usados dados pessoais reais. Eles foram substituídos por dados fictícios pelo próprio painel (aba Editar/Excluir; ver `real_d_streamlit_editar.png`). No print `real_c_supabase_clientes.png`, tirado antes da correção, a linha foi tarjada. Os prints de terminal não foram incluídos porque mostram a chave da API.
+
+### 5.2 Testes de desenvolvimento (ambiente que reproduz o Supabase)
+
+| Item | Arquivos |
 |---|---|
-| (a) Gradio no celular | `a_gradio_celular_formulario.png` (tela de 390 px, viewport de iPhone 13) |
-| (b) Cadastro realizado | `b_gradio_celular_cadastro_sucesso.png`, `b3_gradio_desktop_cliente_reaproveitado.png`, `b2_gradio_celular_validacao.png` |
-| (c) Tabelas preenchidas | **capturar no Table Editor do Supabase** (`clientes` e `ordens_servico`); referência local em `teste_local_tabelas.txt` |
-| (d) Streamlit: consulta, edição, indicadores | `d1`…`d11` (consulta, filtro, cadastro, edição, validação, exclusão, cascata, indicadores, celular) |
+| (a)/(b) Gradio | `a_gradio_celular_formulario.png`, `b_gradio_celular_cadastro_sucesso.png`, `b2_gradio_celular_validacao.png`, `b3_gradio_desktop_cliente_reaproveitado.png` |
+| (c) Tabelas e restrições | `teste_local_tabelas.txt`, `teste_local_restricoes_sql.txt` (12 testes OK) |
+| (d) Streamlit | `d1`…`d11` (consulta, filtro, cadastro, edição, validação, e-mail duplicado, exclusão, cascata, indicadores, celular) |
 | Bônus CSV | `bonus_export_filtrado.csv` |
